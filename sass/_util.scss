@@ -1,0 +1,44 @@
+
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+$font-list: 14px 16px 30px;
+$base-font-size: nth($font-list,1);  
+$base-line-height: 10px;
+$min-line-padding: 2px;
+$rhythm-unit: 'px';
+$susy: (
+	columns:24,
+	gutter-position:split,
+	gutter-width: 5px
+);
+$mainColor:#FFF;
+$drakColor:#222;
+$lightColor:#FFF;
+$pageWidth:960px;
+$border:1px solid $lightColor;
+
+%indent{
+	display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+%text-wrap{
+	display: block;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+}
+%block{
+	@include container();
+	max-width: $pageWidth;
+}
+
+@mixin image-block($path,$cache:false){
+	@extend %indent;
+	background-image: image-url($path,false,$cache);
+	width: image-width($path);
+	height: image-height($path);
+}

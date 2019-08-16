@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- should put the jquery cdn frist before the bootstrap cdn -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a:hover,
+    a:active,
+    a:focus {
+        text-decoration: none;
+    }
+    
+    .panel-group {
+        width: 200px;
+        padding: 20px;
+        background: #222;
+    }
+    
+    .search-icon {
+        margin-left: 20px;
+    }
+    
+    .small p {
+        font-size: 4px;
+    }
+    
+    .caret {
+        margin-left: 35px;
+    }
+    
+    .form-group {
+        position: relative;
+    }
+    
+    .search-icon {
+        position: absolute;
+        left: -10px;
+        px;
+        top: 5px;
+        width: 25px;
+    }
+    
+    .search {
+        padding-left: 35px;
+    }
+    
+    .form-group {
+        margin-bottom: 5px;
+    }
+    
+    .panel-default {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #444;
+    }
+    
+    .panel-default>.panel-heading {
+        background: #222;
+    }
+    
+    .panel-group .panel {
+        margin-bottom: 0;
+        border-radius: 0px;
+        background-color: #222;
+    }
+    
+    .panel-default>.panel-heading {
+        color: #FFF;
+        background-color: 222;
+        border-color: #ddd;
+    }
+    
+    .panel-default>.panel-heading+.panel-collapse>.panel-body {
+        border-top-color: #222;
+        color: white;
+    }
+    
+    .footer li {
+        /*display: inline-block;*/
+        margin-top: 15px;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .footer-copyright {
+        color: #FFF;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="panel-group" id="accordion">
+        <div class="form-group">
+            <label for="inputPassword2" class="sr-only">Password</label>
+            <img class="search-icon" src="TW.png">
+            <input class="form-control search" id="inputPassword2" placeholder="搜尋">
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="accordion" 
+          href="#collapseOne">
+          第一層導覽
+        <b class="caret"></b>
+        </a>
+      </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    下一層 導覽
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="accordion" 
+          href="#collapseTwo">
+          第二層導覽
+      <b class="caret"></b>
+        </a>
+      </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    下一層 導覽
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="accordion" 
+          href="#collapseThree">
+         第三層導覽
+       <b class="caret"></b>
+        </a>
+      </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    下一層導覽
+                </div>
+            </div>
+        </div>
+        <ul class="footer">
+            <li>
+                <a href="#">
+                    <img src="google.png">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="App.png">
+                </a>
+            </li>
+            <li>
+                <p class="footer-copyright">Posted by: Hege </p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

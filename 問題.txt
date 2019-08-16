@@ -1,0 +1,16 @@
+手機點擊延遲
+
+icon使用background-position改成opacity
+background-position會延遲？
+
+左上角icon，transition不順
+
+swipe滑動速度
+
+版型左右留5px
+
+em, vw, px差別
+
+圖片放背景還是html
+
+fb comments 做成 RWD
